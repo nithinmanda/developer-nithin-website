@@ -1,7 +1,7 @@
 
 export default function Footer() {
     return (
-        <footer className="w-full border-t border-zinc-800 bg-background-light dark:bg-background-dark font-display text-white">
+        <footer className="w-full border-t border-zinc-800 bg-background font-display text-foreground">
             <div className="mx-auto max-w-7xl px-8 py-8 lg:px-8">
                 <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
                     {/* Column 1: Identity */}
@@ -10,7 +10,7 @@ export default function Footer() {
                             <div className="h-8 w-8 bg-primary rounded flex items-center justify-center">
                                 <span className="material-symbols-outlined text-white text-xl">terminal</span>
                             </div>
-                            <span className="text-xl font-bold tracking-tighter text-slate-900 dark:text-white">developer.nithin</span>
+                            <span className="text-xl font-bold tracking-tighter text-foreground uppercase">developer.nithin</span>
                         </div>
                         <p className="text-zinc-500 text-sm leading-relaxed max-w-[200px]">
                             Building digital excellence with precision and purpose.
@@ -24,10 +24,10 @@ export default function Footer() {
                     <div className="flex flex-col gap-4">
                         <h3 className="font-mono text-[10px] font-semibold text-zinc-500 uppercase tracking-widest">Contact</h3>
                         <div className="flex flex-col gap-3">
-                            <a className="text-zinc-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm font-light" href="mailto:hello@nithin.dev">
+                            <a className="text-zinc-400 hover:text-foreground transition-colors text-sm font-light" href="mailto:hello@nithin.dev">
                                 goudnithin77@gmail.com
                             </a>
-                            <a className="text-zinc-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm font-light" href="tel:+10000000000">
+                            <a className="text-zinc-400 hover:text-foreground transition-colors text-sm font-light" href="tel:+10000000000">
                                 +91 9912491246
                             </a>
                         </div>

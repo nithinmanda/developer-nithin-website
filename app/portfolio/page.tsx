@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function PortfolioPage() {
     return (
-        <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+        <div className="bg-background text-foreground transition-colors duration-300">
             {/* <PortfolioNavbar /> */}
             <AgencyNavbar />
 
@@ -63,7 +63,7 @@ export default function PortfolioPage() {
                     imageUrl="https://lh3.googleusercontent.com/aida-public/AB6AXuDGPoYkx5RzQR-9eeMiu-qZtm1xDm2utZBcRjBlXKDMmoCW1wDexOifAoZuhXfcpcCpp_vxm6aPCSSlKqP2QyJwLstkxJ-9QT6KQNbnY4afLhH8e351IeHC84_UKF_ZxjcjaJqfPiJmM_HzAaROka9Y7FEhEguPUt8-8pLzHGLl7AJcBdUmRNILmmsk8xtE2N3dLk74RD8Mhik_aynYrq0H4xavMqgD_fTy7eSIpI7PtJYEZLXWbwyGiLUSNGXzVyZaHbyrS2wZcX0"
                     imageAlt="Abstract lifestyle e-commerce mobile app mockup"
                     align="right"
-                    buttonVariant="white"
+                    buttonVariant="primary"
                 />
 
                 {/* Project 3: Vitality Ecosystem */}

@@ -4,12 +4,12 @@ import Footer from "../new-components/Footer";
 
 export default function ContactRealPage() {
     return (
-        <main className="bg-background-light dark:bg-background-dark min-h-screen text-slate-900 dark:text-white">
+        <div className="bg-background text-foreground transition-colors duration-300">
             <AgencyNavbar />
             <div className="pt-32">
                 <ContactReal />
             </div>
             <Footer />
-        </main>
+        </div>
     );
 }

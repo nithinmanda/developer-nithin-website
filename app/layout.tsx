@@ -52,7 +52,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${spaceGrotesk.variable} ${jetBrainsMono.variable} antialiased bg-background-dark font-display text-white overflow-x-hidden selection:bg-primary selection:text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${spaceGrotesk.variable} ${jetBrainsMono.variable} antialiased bg-background font-display text-foreground overflow-x-hidden selection:bg-primary selection:text-white`}
       >
         {children}
       </body>

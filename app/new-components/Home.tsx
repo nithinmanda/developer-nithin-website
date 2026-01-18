@@ -24,7 +24,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+        <div className="bg-background text-foreground transition-colors duration-300">
             {/* Side Progress Indicator */}
             <AgencyNavbar />
             <PortfolioHero />
