@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from "react";
-import NoiseButton from "./shared/NoiseButton";
+import NoiseButton from "../components/shared/NoiseButton";
 
 interface FormData {
     name: string;
@@ -15,7 +15,7 @@ interface FormStatus {
     message: string;
 }
 
-export default function Contact() {
+export default function ContactReal() {
     const [formData, setFormData] = useState<FormData>({
         name: '',
         email: '',
@@ -80,7 +80,7 @@ export default function Contact() {
     };
 
     return (
-        <div id="contact" className="relative flex flex-col w-full">
+        <div id="contact-real" className="relative flex flex-col w-full mb-4">
             <div className="layout-container flex flex-col w-full max-w-[1200px] mx-auto px-4 lg:px-10 ">
                 {/* Heading Section */}
                 <div className="flex flex-col gap-4 mb-12 max-w-3xl animate-fade-in">
@@ -100,16 +100,16 @@ export default function Contact() {
                             {/* Status Messages */}
                             {status.type !== 'idle' && (
                                 <div className={`mb-6 p-4 rounded-lg ${status.type === 'success'
-                                        ? 'bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800'
-                                        : status.type === 'error'
-                                            ? 'bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800'
-                                            : 'bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800'
+                                    ? 'bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800'
+                                    : status.type === 'error'
+                                        ? 'bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800'
+                                        : 'bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800'
                                     }`}>
                                     <p className={`text-sm font-medium ${status.type === 'success'
-                                            ? 'text-green-800 dark:text-green-200'
-                                            : status.type === 'error'
-                                                ? 'text-red-800 dark:text-red-200'
-                                                : 'text-blue-800 dark:text-blue-200'
+                                        ? 'text-green-800 dark:text-green-200'
+                                        : status.type === 'error'
+                                            ? 'text-red-800 dark:text-red-200'
+                                            : 'text-blue-800 dark:text-blue-200'
                                         }`}>
                                         {status.message}
                                     </p>
@@ -196,7 +196,7 @@ export default function Contact() {
                                 </div>
                                 <div className="flex flex-col">
                                     <h3 className="text-sm font-bold text-slate-500 dark:text-gray-400">Email</h3>
-                                    <a className="text-lg font-bold hover:text-primary transition-colors text-gray-900 dark:text-white" href="mailto:hello@developer.nithin.com">hello@developer.nithin.com</a>
+                                    <a className="text-lg font-bold hover:text-primary transition-colors text-gray-900 dark:text-white" href="mailto:[goudnithin77@gmail.com]">goudnithin77@gmail.com</a>
                                 </div>
                             </div>
                             {/* Phone */}
@@ -206,7 +206,7 @@ export default function Contact() {
                                 </div>
                                 <div className="flex flex-col">
                                     <h3 className="text-sm font-bold text-slate-500 dark:text-gray-400">Phone</h3>
-                                    <a className="text-lg font-bold hover:text-primary transition-colors text-gray-900 dark:text-white" href="tel:+15550123456">+1 (555) 012-3456</a>
+                                    <a className="text-lg font-bold hover:text-primary transition-colors text-gray-900 dark:text-white" href="tel:+15550123456">+91 9912491246</a>
                                 </div>
                             </div>
                             {/* Location */}
@@ -216,32 +216,11 @@ export default function Contact() {
                                 </div>
                                 <div className="flex flex-col">
                                     <h3 className="text-sm font-bold text-slate-500 dark:text-gray-400">Location</h3>
-                                    <p className="text-lg font-bold text-gray-900 dark:text-white">123 Tech Boulevard, SF, CA</p>
+                                    <p className="text-lg font-bold text-gray-900 dark:text-white">Khammam, Telangana, India</p>
                                 </div>
                             </div>
                         </div>
-                        {/* Map Section */}
-                        <div className="relative h-[300px] w-full overflow-hidden rounded-2xl border border-slate-200 dark:border-white/5 bg-[#1a2632] group mb-4">
-                            <div
-                                className="absolute inset-0 bg-cover bg-center opacity-60 group-hover:opacity-80 transition-opacity duration-500 grayscale group-hover:grayscale-0"
-                                data-alt="Dark stylized map view of San Francisco city streets"
-                                style={{
-                                    backgroundImage:
-                                        'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTez15G2VNC5c2mTUD-PU3hMumxKW1ho2G4WATTmQPSjfa8xnwKxu2TZRlZhAEyfBlSijM532EL4_E6FeWZP9bp68_SX3QQVAgxD9L34mugJwcqJdKVHeJPp-woKUdpHhZnsDAR5pTRqR1O7phho-oJzZ2X0b26sDfLl87nzYGyn0N7Zc6r2Ievcj6213mrO9PImB62NiQ_arGRlhKSD9HwXehJt08vijZ09IktsT8Ch8mmXvVc275i9G_Kb3G3fLeA6pWToPEktXY")',
-                                }}
-                            ></div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#101922] to-transparent opacity-80"></div>
-                            {/* Map Pin Overlay */}
-                            <div className="absolute bottom-6 left-6 flex items-center gap-3">
-                                <div className="flex size-10 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-blue-500/50">
-                                    <span className="material-symbols-outlined text-[20px]">business</span>
-                                </div>
-                                <div>
-                                    <p className="text-xs font-bold uppercase tracking-wider text-primary">Headquarters</p>
-                                    <p className="text-sm font-bold text-white">San Francisco, CA</p>
-                                </div>
-                            </div>
-                        </div>
+
 
                     </div>
                 </div>
